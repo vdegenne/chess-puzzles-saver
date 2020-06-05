@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@material/mwc-button": "^0.15.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@rollup/plugin-typescript": "^4.1.2",
+    "@vdegenne/clipboard-copy": "^3.1.0",
+    "lit-element": "^2.3.1",
+    "rollup": "^2.13.1",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  }
+}
