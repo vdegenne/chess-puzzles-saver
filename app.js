@@ -4240,14 +4240,13 @@
             if (link === null) {
                 return;
             }
+            let pretitle = 'title';
             // get puzzle id
-            let puzzleId = link.substr(link.lastIndexOf('/') + 1);
-            // @ts-ignore
-            if (isNaN(puzzleId)) {
-                alert('the link is not valid');
-                return;
+            let puzzleId = /[0-9]{4,}/.exec(link);
+            if (puzzleId) {
+                pretitle = puzzleId[0];
             }
-            const name = prompt('name', puzzleId);
+            const name = prompt('name', pretitle);
             if (name === null) {
                 return;
             }

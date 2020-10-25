@@ -100,15 +100,17 @@ export class AppContainer extends LitElement {
 		const link = prompt('link');
 		if (link === null) {
 			return;
-		}
+    }
+    
+    let pretitle = 'title';
+
 		// get puzzle id
-		let puzzleId = link.substr(link.lastIndexOf('/') + 1);
-		// @ts-ignore
-		if (isNaN(puzzleId)) {
-			alert('the link is not valid');
-			return
-		}
-		const name = prompt('name', puzzleId)
+    let puzzleId = /[0-9]{4,}/.exec(link);
+    if (puzzleId) {
+      pretitle = puzzleId[0];
+    }
+
+		const name = prompt('name', pretitle)
 		if (name === null) {
 			return;
 		}
