@@ -2,10 +2,10 @@
 
 - <a href="https://vdegenne.github.io/chess-puzzles-saver/">Access the application here</a>
 
-- Then click on *Add Puzzle* and copy/paste the link of the puzzle page (lichess or chess.com link).
+- Then click on **Add Puzzle** and copy/paste the link of the puzzle page (lichess or chess.com link).
 - Choose a name (default to the id of the link)
 - Add more puzzles
-- Finally when you have a good list you can push *r* on your keyboard to open a random puzzle.
+- Finally when you have a good list you can push **r** on your keyboard to open a random puzzle.
 
 ## Motivation
 
